@@ -11,11 +11,11 @@ jobs:
       - name: Fetch ssq_100.json
         run: |
           mkdir -p data
-          curl -s 'https://www.cwl.gov.cn/cwl_admin/front/cwlkj/search/kjxx/findDrawNotice?name=ssq&systemType=PC&pageNo=1&pageSize=100' -o data/ssq_100.json
+          curl 'https://www.cwl.gov.cn/cwl_admin/front/cwlkj/search/kjxx/findDrawNotice?name=ssq&systemType=PC&pageNo=1&pageSize=100' -o data/ssq_100.json
 
       - name: Fetch ssq.json
         run: |
-          curl -s 'https://www.cwl.gov.cn/cwl_admin/front/cwlkj/search/kjxx/findDrawNotice?name=ssq' -o data/ssq.json
+          curl 'https://www.cwl.gov.cn/cwl_admin/front/cwlkj/search/kjxx/findDrawNotice?name=ssq' -o data/ssq.json
 
       - name: Commit and push if changed
         run: |
