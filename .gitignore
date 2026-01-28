@@ -1,0 +1,6 @@
+unpackage/*
+.hbuilderx/launch.json
+.vscode/settings.json
+
+download_lottery.bat
+download_lottery.ps1
