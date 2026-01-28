@@ -4,3 +4,5 @@ unpackage/*
 
 download_lottery.bat
 download_lottery.ps1
+
+remove_fields.py
